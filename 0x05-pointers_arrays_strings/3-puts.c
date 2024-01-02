@@ -1,8 +1,14 @@
 #include "main.h"
 #include <stdio.h>
+
+/**
+ * _puts - prints a string
+ * @str: string to be printed
+ *
+ */
 /*
- * _puts - Prints a followed by a new line
- * @str: String variable
+ * _puts - prints a string followed by a new line
+ * @str: string variable
  *
  */
 
