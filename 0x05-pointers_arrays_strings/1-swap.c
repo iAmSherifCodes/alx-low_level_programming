@@ -2,14 +2,14 @@
 
 /**
  * swap_int - takes two integer variable and swap them
- * @a: first variable
- * @b: second variable
+ * @var1: first variable
+ * @var2: second variable
+ *
  */
 
-void swap_int(int *a, int *b)
+void swap_int(int *var1, int *var2)
 {
-	int temp = *a;
-	*a = *b;
-	*b = temp;
+	int tmp = *var1;
+	*var1 = *var2;
+	*var2 = tmp;
 }
-
