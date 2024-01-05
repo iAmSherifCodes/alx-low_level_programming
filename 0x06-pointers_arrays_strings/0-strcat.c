@@ -4,13 +4,7 @@
  * _strlen - function that get the length of a string
  * @str: string to check
  *
- * _strlen Return: length of the string
- *
- * _strcat - a function that concatenates two strings
- * @dest: copy to
- * @src: copy from
- *
- * _strcat Return: two concat strings
+ * Return: length of the string
  */
 
 int _strlen(char *str)
@@ -24,6 +18,14 @@ int _strlen(char *str)
 
 	return (str_len);
 }
+
+/**
+ * _strcat - function that concatenates two strings
+ * @dest: copy to
+ * @src: copy from
+ *
+ * Return: two concat strings
+ */
 
 char *_strcat(char *dest, char *src)
 {
