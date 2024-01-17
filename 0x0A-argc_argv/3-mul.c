@@ -18,6 +18,7 @@ int main(int c, char **argv)
 	if (c < 2)
 	{
 		puts("Error");
+		return (1);
 	}
 	else
 	{
