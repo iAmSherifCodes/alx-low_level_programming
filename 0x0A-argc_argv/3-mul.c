@@ -17,7 +17,7 @@ int main(int c, char **argv)
 
 	result = 0;
 
-	if (c < 2)
+	if (c <= 2)
 	{
 		puts("Error");
 		return (1);
