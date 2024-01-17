@@ -11,6 +11,8 @@
 
 int main(int c, char **argv)
 {
+	int first;
+	int second;
 	int result;
 
 	result = 0;
@@ -22,7 +24,10 @@ int main(int c, char **argv)
 	}
 	else
 	{
-		result = atoi(*(argv + 1)) * atoi(*(argv + 2));
+		first = atoi(*(argv + 1));
+		second = atoi(*(argv + 2));
+
+		result = first * second;
 		printf("%d\n", result);
 	}
 
