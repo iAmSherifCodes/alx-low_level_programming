@@ -1,38 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-/**
- * main - adds positive numbers.
- * @argc: argument count
- * @argv: arguments
- *
- * Return: 0
- */
-int main(int argc, char **argv)
+int main(int c, char **g)
 {
-	int i, n, sum = 0;
-	char *flag;
+	int iterator, result;
 
-	if (argc < 2)
+	iterator = 1;
+	result = 0;
+
+	if ( c == 1)
 	{
-		printf("0\n");
+		printf("%d\n", 0);
 		return (0);
 	}
 
-	for (i = 1; argv[i]; i++)
+	for (; iterator < c; iterator++)
 	{
-		n = strtol(argv[i], &flag, 10);
-		if (*flag)
+		if(isalpha(((char)g[iterator])))
 		{
-			printf("Error\n");
+			puts("Error");
 			return (1);
 		}
-		else
+
+		if (atoi(g[iterator]) >= 0)
 		{
-			sum += n;
+			result += atoi(g[iterator]);
 		}
 	}
-	printf("%d\n", sum);
+
+	printf("%d\n", result);
 
 	return (0);
+
 }
