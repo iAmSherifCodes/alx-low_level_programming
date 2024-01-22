@@ -20,10 +20,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
-	a = malloc(sizeof(char) * size);
 
-	if ( a == NULL)
+	a = (char *)malloc(sizeof(char) * size);
+
+	if (a == NULL)
 	{
 		fprintf(stderr, "failed to allocate memory\n");
 		return (NULL);
