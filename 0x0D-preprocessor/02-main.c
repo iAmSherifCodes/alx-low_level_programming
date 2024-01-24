@@ -3,16 +3,11 @@
 /**
  * main - function that prints its name
  *
- * @c: args count
- * @v: args
- *
- * Return: returns int value
+ * Return: Always (0)
  */
 
-int main(int c, char **v)
+int main(void)
 {
-	(void) c;
-	(void) v;
 	printf("%s\n", __FILE__);
 
 	return (0);
