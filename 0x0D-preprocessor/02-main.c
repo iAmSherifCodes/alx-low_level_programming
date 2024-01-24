@@ -9,10 +9,9 @@
  * Return: returns int value
  */
 
-int main(int c, char **v)
+int main(void)
 {
-	(void)c;
-	puts(v[0]);
+	printf("%s\n", __FILE__);
 
 	return (0);
 }
